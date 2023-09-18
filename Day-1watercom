@@ -1,19 +1,14 @@
-#include <stdio.h>
+
+include <stdio.h>
 
 int main() {
-    int t; // Number of test cases
-    scanf("%d", &t);
-
-    while (t--) {
-        int x; // Amount of water Chef drank today
-        scanf("%d", &x);
-
-        if (x >= 2000) {
-            printf("YES\n");
-        } else {
-            printf("NO\n");
-        }
+    int x;
+    printf("Enter a amount of water chef drank today(ml): ");
+    scanf("%d",&x);
+    if (x<2000){
+        printf("chef is not following doctor's advice");
+    }else{
+        printf("chef is following doctor's advice");
     }
-
     return 0;
 }
