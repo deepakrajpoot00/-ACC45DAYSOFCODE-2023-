@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n,c,d;
+    cout<<"Enter the number of students: ";
+    cin>>n;
+    cout<<"Enter the number of chairs: ";
+    cin>>c;
+    if(c > n){
+        d = c - n;
+        cout<<d<<" are the extra chairs.";
+    }
+    else if(c == n){
+        cout<<"Numbers of chairs are sufficient enough.";
+    }
+    else if(c < n){
+        d = n -c;
+        cout<<d<<" are the numbers of chairs required.";
+    };
+    return 0;
+};
