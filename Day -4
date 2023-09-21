@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y; 
+    printf("Enter the value of X (daily goal): ");
+    scanf("%d", &X); 
+    printf("Enter the value of Y (total chocolates sold): ");
+    scanf("%d", &Y); 
+    
+    int totalAmount = (X * 1) + ((Y - X) * 2);
+    printf("Total amount earned: %d rupees\n", totalAmount);
+    return 0;
+}
