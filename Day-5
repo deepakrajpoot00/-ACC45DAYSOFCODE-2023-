@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int X;
+    printf("Enter the battery level : ");
+    scanf("%d", &X);
+    
+    if(X<=15){
+        printf("YES");
+    }else{
+        printf("NO");
+    }
+    return 0;
+}
