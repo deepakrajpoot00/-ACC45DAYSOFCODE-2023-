@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    printf("Enter FOLLOWING count : ");
+    scanf("%d", &X);
+    
+    printf("Enter FLLOWERS count : ");
+    scanf("%d", &Y);
+    
+    X > 10 * Y ? printf("YES") : printf("NO");
+    return 0;
+}
