@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int gyser, bucket, c,d;
+    printf("Enter the capacity of gyser(in litres) and then bucket(in litres) :");
+    scanf("%d %d", &gyser,&bucket);
+   
+    c=bucket*2;
+    d=gyser/c;
+    printf("maximum no of people can take: %d",d);
+    return 0;
+}
