@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int X,Y,a,b;
+    printf("Cost of renting the cooler(coins per month) : ");
+    scanf("%d", &X);
+    
+    printf("Cost of purchasing the cooler(coins) : ");
+    scanf("%d", &Y);
+    
+    a = Y / X;
+    b = a * X;
+    
+    if(X>=Y){
+        printf("Chef should not rent a cooler");
+    }else{
+        printf("Chef rents the cooler for %d months\n",a);
+        printf("it will cost %d coins\n",b);
+    }
+    return 0;
+}
