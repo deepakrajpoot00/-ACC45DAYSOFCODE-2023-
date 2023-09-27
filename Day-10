@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y, m, r;
+    printf("Enter total rupees : ");
+    scanf("%d", &X);
+    
+    printf("Enter cost of one chocolate : ");
+    scanf("%d", &Y);
+    
+    m = X / Y;
+    r = m * Y;
+    if(Y>X){
+        printf("Chef can not buy any chocolate");
+    }else{
+        printf("Chef can buy max %d chocolates for %d rupees",m,r);
+    }
+    return 0;
+}
