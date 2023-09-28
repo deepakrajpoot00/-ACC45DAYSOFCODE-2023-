@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int N, M, r;
+    printf("Enter the number of runs required : ");
+    scanf("%d", &N); 
+    
+    printf("Enter the remaining number of overs : ");
+    scanf("%d", &M);
+    
+    r = 6 * 6;
+    if(N<=r*M){
+        printf("Yes,Chef's team can win");
+    }else{
+        printf("NO,Chef's team cannot win");
+    }
+    return 0;
+}
