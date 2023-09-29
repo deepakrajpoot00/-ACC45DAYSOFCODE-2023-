@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int X, Y, Z, m, t;
+    printf("The speed of bullet (pixels) : ");
+    scanf("%d", &X);
+    
+    printf("Position of goomba from mario (pixels) : ");
+    scanf("%d", &Y);
+    
+    t = Y / X;
+    printf("Bullet take %d seconds to reach the goomba\n",t);
+    printf("Enter after time when mario want the bullet to reach the goomba : ");
+    scanf("%d", &Z);
+    m = Z - t;
+    if(Z<=t){
+        printf("Mario should fire the bullet after 0 seconds\n");
+    }else if(m = Z - t){
+        printf("Mario should fire the bullet after %d seconds\n",m);
+    }    
+    return 0;
+}
