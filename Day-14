@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int X, Y, m, n, o;
+    printf("Enter the number of stairs chef wants to reach : ");
+    scanf("%d", &X);
+    
+    printf("Enter the number of stairs he can climb in one move : ");
+    scanf("%d", &Y);
+    m = X / Y;
+    n = X % Y;
+    o = m + n;
+    if(X%Y==0){
+        printf("Chef can make a minimum of %d moves",m);
+    }else{
+        printf("chef can make a minimun of %d moves",o);
+    }
+    return 0;
+}
