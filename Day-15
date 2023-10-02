@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int X, Y, N;
+    printf("Enter the total number of cards : ");
+    scanf("%d", &N);
+    
+    printf("Enter the number of face-up cards : ");
+    scanf("%d", &X);
+    Y = N - X;
+    printf("The number of face-down cards : %d\n",Y);
+    if(N==X){
+        printf("0 operation");
+    }else if(N==Y){
+        printf("0 operation");
+    }else if(Y>=X){
+        printf("%d operations",X);
+    }else{
+        printf("%d operations",Y);
+    }
+    return 0;
+}
