@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int N, M, r;
+    printf("Enter the number of candies : ");
+    scanf("%d", &N);
+    
+    printf("Enter the number of friends : ");
+    scanf("%d", &M);
+    r = N / M;
+    if(r%2==0){
+        printf("YES");
+    }else{
+        printf("NO");
+    }
+    return 0;
+}
