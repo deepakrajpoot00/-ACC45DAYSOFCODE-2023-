@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int T, W, X, Y, Z;
+    printf("Enter Bob's current account balance (in Rs) : ");
+    scanf("%d", &W);
+    printf("Enter the amount deposited per month (in Rs) : ");
+    scanf("%d", &X);
+    printf("Enter the bank charges per month (in Rs) : ");
+    scanf("%d", &Y);
+    printf("Enter the number of months : ");
+    scanf("%d", &Z);
+    T = W + (X - Y) * Z;
+    printf("At the end of %d months Bob will have : %d rupees",Z,T);
+    return 0;
+}
