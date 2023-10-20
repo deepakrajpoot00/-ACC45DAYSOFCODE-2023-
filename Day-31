@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int x,y,a,b;
+    printf("Enter the location of policeman : ");
+    scanf("%d", &x);
+    
+    printf("Enter the location of thief : ");
+    scanf("%d", &y);
+    a = y - x;
+    b = x - y;
+    if(x<y){
+        printf("Minimum time taken to catch thief : %d seconds",a);
+    }else if(x>y){
+        printf("Minimum time taken to catch thief : %d seconds",b);
+    }else if(x=y){
+        printf("Minimum time taken to catch thief : 0 second");
+    
+    }
+    return 0;
+}
