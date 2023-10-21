@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int x,y,a,b;
+    printf("Enter the initial and desired temperature of bathtub : ");
+    scanf("%d %d", &a, &b);
+    
+    printf("Enter the amount of hot water and cold water (in litres) : ");
+    scanf("%d %d", &x, &y);
+    if(b>a){
+        if(x>=(b-a)){
+            printf("YES,chef get the desired temperature for bath");
+        }else{
+            printf("NO,chef cannot reach the desired temperature");
+        }
+    }else if(a>b){
+        if(y>=(a-b)){
+            printf("YES,chef get the desired temperature for bath");
+        }else{
+            printf("NO,chef cannot reach the desired temperature");
+        }    
+    }else if(a=b){
+        printf("Chef does not need to add any more water");
+    }
+    return 0;
+}
