@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int w,x,y,z;
+    printf("Enter the weight of object : ");
+    scanf("%d", &w);
+    
+    printf("Enter the three weight : ");
+    scanf("%d %d %d", &x, &y, &z);
+    if((x+y+z)>=w){
+        if(x+y==w||x==w){
+            printf("YES");
+        }else if(y+z==w||y==w){
+            printf("YES");
+        }else if(x+z==w||z==w){
+            printf("YES");
+        }else{
+            printf("NO");
+        }
+    }else if((x+y+z)<w){
+        printf("NO");
+    }
+    return 0;
+}
