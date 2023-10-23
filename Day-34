@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int x,y,a,b,c,d;
+    printf("Enter the number of plates chef prepared : ");
+    scanf("%d", &x);
+    
+    printf("Enter the number of plates each person takes : ");
+    scanf("%d", &y);
+    a = x / y;
+    b = x - (y * a);
+    c = a - 20;
+    d = (y * c);
+    if(x%y==0){
+        if(a<=20){
+            printf("Chef can feed %d neighbours",a);
+        }else{
+            printf("Chef can feed all 20 neighbours and still %d plates left",d);
+        }
+    }else if(x%y!=0){
+        printf("Chef can feed %d neighbours and still %d plates left",a,b);
+    }
+    return 0;
+}
