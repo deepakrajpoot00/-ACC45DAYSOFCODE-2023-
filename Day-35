@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int s,x,y,z,a,b;
+    printf("Enter the total memory of chef phone : ");
+    scanf("%d", &s);
+    
+    printf("Enter the memory occupied by two installed apps : ");
+    scanf("%d %d", &x, &y);
+    
+    printf("Enter the memory required by third app : ");
+    scanf("%d", &z);
+    a = x + y;
+    b = s - (x + y);
+    if(z<=b){
+        printf("Third App can be install without deleting any app");
+    }else if(z>b){
+        if((z+x)<=s){
+            printf("Chef has to delete %d MB app to install third app",y);
+        }else if((z+y)<=s){
+            printf("Chef has to delete %d MB app to install third app",x);
+        }else if(a==z){
+            printf("Chef has to delete both the apps to install third app",y);
+        }
+    }
+    return 0;
+}
