@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int n,a;
+    printf("Enter the number of pieces : ");
+    scanf("%d", &n);
+    a = n / 2;
+    if(n==1){
+        printf("YES,he can divide the pizza into 1 piece by making 0 cut");
+    }else if(n%2==0){
+        printf("YES,he can divide the pizza into %d pieces by making %d cut",n,a);
+    }else{
+        printf("NO,he cannot divide the pizza into %d pieces by using valid cuts",n);
+    }
+
+    return 0;
+}
