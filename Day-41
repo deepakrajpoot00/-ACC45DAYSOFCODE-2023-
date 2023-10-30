@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int n,m;
+    float t;
+    printf("Enter the cost of ordering online : ");
+    scanf("%d", &n);
+    
+    printf("Enter the cost of eating at the restaurant : ");
+    scanf("%d", &m);
+    t = n - (n / 10);
+    if(t>m){
+        printf("DINING");
+    }else if(t<m){
+        printf("ONLINE");
+    }else{
+        printf("EITHER");
+    }
+    return 0;
+}
