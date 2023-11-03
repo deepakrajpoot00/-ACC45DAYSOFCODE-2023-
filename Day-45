@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a,b,u,v;
+    printf("Enter the money offered by both the investers : ");
+    scanf("%d %d", &a, &b);
+    u = a * 10;
+    v = b * 5;
+    if(u>v){
+        printf("FIRST");
+    }else if(v>u){
+        printf("SECOND");
+    }else{
+        printf("ANY");
+    }
+    return 0;
+}
