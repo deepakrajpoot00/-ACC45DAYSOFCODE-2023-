@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int N; 
+    int count = 0; 
+    int age;
+    printf("Enter the number of women: ");
+    scanf("%d", &N);
+    for (int i = 1; i <= N; i++) {
+        printf("Enter the age of woman %d: ", i);
+        scanf("%d", &age);
+
+        if (age >= 10 && age <= 60) {
+            count++;
+        }
+    }
+    printf("Number of eligible women for special training: %d\n", count);
+
+    return 0;
+}
